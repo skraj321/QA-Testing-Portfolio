@@ -6,6 +6,8 @@ This folder showcases my hands-on experience with **Jira Software**, one of the 
 
 To make the learning practical, I developed a sample project named **SpiceSprint**, where I planned and managed software development activities using Agile and Scrum methodologies.
 
+---
+
 ## Activities Performed
 
 - Created Scrum Project
@@ -22,6 +24,8 @@ To make the learning practical, I developed a sample project named **SpiceSprint
 - GitHub Integration with Jira
 - Issue Type Customization
 
+---
+
 ## SpiceSprint Project
 
 The project includes practical management of features such as:
@@ -32,6 +36,16 @@ The project includes practical management of features such as:
 - Forgot Password Story
 - Bug Reporting & Tracking
 - Sprint Planning for Upcoming Features
+
+---
+
+## Project Demonstration
+
+A complete walkthrough of the Jira project is available here:
+
+🎥 **Project Demo:** https://lnkd.in/p/g8x3Pqve
+
+---
 
 ## Skills Demonstrated
 
@@ -46,4 +60,8 @@ The project includes practical management of features such as:
 - Dashboard Configuration
 - GitHub Integration
 
-This project demonstrates my practical understanding of Agile project management and how Jira is used to organize, track, and manage software development and QA activities in real-world projects.
+---
+
+## Conclusion
+
+This project demonstrates my practical understanding of Agile project management using Jira. It reflects my ability to organize software development work, manage sprints, track user stories and bugs, and collaborate effectively within an Agile workflow.
