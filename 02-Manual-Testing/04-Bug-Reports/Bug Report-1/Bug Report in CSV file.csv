@@ -1,0 +1,460 @@
+ID,Team,Title,Description,Status,Estimate,Priority,Project ID,Project,Creator,Assignee,Labels,Cycle Number,Cycle Name,Cycle Start,Cycle End,Created,Updated,Started,Triaged,Completed,Canceled,Archived,Due Date,Parent issue,Initiatives,Project Milestone ID,Project Milestone,SLA Status,UUID,Time in status (minutes),Related to,Blocked by,Duplicate of
+SAH-5,Saheb Kumar,Infinite loading spinner displayed when searching with an empty search field,"### Severity: 
+
+```
+Major
+```
+
+### Component: 
+
+```
+Forkify 
+```
+
+### Affects Version: 
+
+```
+1.0
+```
+
+### Environment: 
+
+```
+OS: Windows 11
+
+Browser: Google Chrome
+```
+
+### Preconditions: 
+
+```
+User is on the Forkify home page.
+
+Search field is empty.
+```
+
+### Description: 
+
+```
+Steps to Reproduce:
+
+Open the Forkify application.
+
+Leave the search field empty.
+
+Click the Search button.
+
+
+Actual Result:
+
+The application enters an infinite loading state and continuously displays the loading spinner.
+No validation message or error is shown.
+
+
+Expected Result: 
+
+The application should not start a search when the search field is empty. 
+It should display a validation message such as ""Please enter a search term."" 
+or prevent the search request from being submitted.
+```
+
+### Attachment:
+
+![Screenshot (1103).png](https://uploads.linear.app/2f4771ac-0a8b-43f7-95c1-16b3afb97968/d2a68c81-edbb-43b2-a561-82e7659cdd03/220d6fa1-9e23-48a9-ac87-45806a874f72?signature=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXRoIjoiLzJmNDc3MWFjLTBhOGItNDNmNy05NWMxLTE2YjNhZmI5Nzk2OC9kMmE2OGM4MS1lZGJiLTQzYjItYTU2MS04MmU3NjU5Y2RkMDMvMjIwZDZmYTEtOWUyMy00OGE5LWFjODctNDU4MDZhODc0ZjcyIiwiaWF0IjoxNzg0MjA2MzU3LCJleHAiOjE3ODY4MzcyMzd9.U8YWFzhUteppE2pWjL2qNrMuAeipMpnP9TIz44e4YiE)",Backlog,,High,c9f72ee8-df29-41b7-898a-0c7d98a40c2b,Forkify Testing,sk8651245603@gmail.com,,Bug,,,,,Tue Jul 14 2026 19:33:01 GMT+0000 (GMT+00:00),Tue Jul 14 2026 21:04:45 GMT+0000 (GMT+00:00),,,,,,,,,,,,60d28779-33aa-408f-ac60-a481ee2989ad,2479,,,
+SAH-7,Saheb Kumar,Search functionality is case-sensitive and does not return results for lowercase search queries,"### **Severity:**
+
+```
+Major
+```
+
+### **Component:**
+
+```
+Forkify
+```
+
+### **Affects Version:**
+
+```
+1.0
+```
+
+### **Environment:**
+
+```
+OS: Windows 11
+
+Browser: Google Chrome
+```
+
+### **Preconditions:**
+
+```
+User has successfully created a recipe with the title ""Veggie Pizza"".
+
+The recipe exists in the application.
+```
+
+### Description: 
+
+```
+Steps to Reproduce:
+
+Open the Forkify application.
+
+Create a recipe with the title ""Veggie Pizza"".
+
+In the search field, enter pizza (lowercase).
+
+Click the Search button.
+
+Repeat the search using veggie and veggie pizza (all lowercase).
+
+
+Actual Result:
+
+The application displays ""No recipes found for your query!"" 
+when the search query is entered in lowercase, even though the recipe exists.
+
+
+Expected Result
+
+The search functionality should be case-insensitive and return matching 
+recipes regardless of whether the user enters uppercase or lowercase letters.
+```
+
+Attachment:
+
+![Screenshot (1113).png](https://uploads.linear.app/2f4771ac-0a8b-43f7-95c1-16b3afb97968/2a7f414b-c3c0-42e2-b76e-221232045032/d6eb751e-0d45-4b2f-a03e-f929989eb5ab?signature=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXRoIjoiLzJmNDc3MWFjLTBhOGItNDNmNy05NWMxLTE2YjNhZmI5Nzk2OC8yYTdmNDE0Yi1jM2MwLTQyZTItYjc2ZS0yMjEyMzIwNDUwMzIvZDZlYjc1MWUtMGQ0NS00YjJmLWEwM2UtZjkyOTk4OWViNWFiIiwiaWF0IjoxNzg0MjA2MzU3LCJleHAiOjE3ODY4MzcyMzd9.eLTDegPZTJv1F2x_1vO1OueptM1S-BAypuyAlwun96E)",Backlog,,High,c9f72ee8-df29-41b7-898a-0c7d98a40c2b,Forkify Testing,sk8651245603@gmail.com,,Bug,,,,,Tue Jul 14 2026 20:51:55 GMT+0000 (GMT+00:00),Tue Jul 14 2026 21:32:43 GMT+0000 (GMT+00:00),,,,,,,,,,,,9a2d6338-66d1-4ffb-a75f-ae9e3a5423af,2400,,,
+SAH-8,Saheb Kumar,Search by ingredient does not return matching recipes,"### Severity:
+
+```
+Major
+```
+
+### Component:
+
+```
+Forkify
+```
+
+### Affects Version: 
+
+```
+1.0
+```
+
+### Environment: 
+
+```
+OS: Windows 11
+
+Browser: Google Chrome
+```
+
+### Preconditions: 
+
+```
+A recipe exists in the application containing the ingredient Cheese (or any other ingredient).
+```
+
+### Description: 
+
+```
+Steps to Reproduce:
+
+Open the Forkify application.
+
+Create or select a recipe containing the ingredient Cheese.
+
+Enter Cheese in the search field.
+
+Click the Search button.
+
+
+Actual Result:
+
+The application displays ""No recipes found for your query!"" 
+even though a recipe containing the searched ingredient exists.
+
+
+Expected Result:
+
+The application should return all recipes that contain the searched ingredient, 
+as specified in the application requirements.
+```
+
+### Attachment: 
+
+![Screenshot (1113).png](https://uploads.linear.app/2f4771ac-0a8b-43f7-95c1-16b3afb97968/6bcbf350-a668-438e-83f2-04004573dd9f/26b705ad-5bab-43e2-a8cc-c7fa8248a10c?signature=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXRoIjoiLzJmNDc3MWFjLTBhOGItNDNmNy05NWMxLTE2YjNhZmI5Nzk2OC82YmNiZjM1MC1hNjY4LTQzOGUtODNmMi0wNDAwNDU3M2RkOWYvMjZiNzA1YWQtNWJhYi00M2UyLWE4Y2MtYzdmYTgyNDhhMTBjIiwiaWF0IjoxNzg0MjA2MzU3LCJleHAiOjE3ODY4MzcyMzd9.Pgsw5Gvt4fUCmlYT0jK2-2Jx7HlSNRELxiuERycHPSM)",Backlog,,High,c9f72ee8-df29-41b7-898a-0c7d98a40c2b,Forkify Testing,sk8651245603@gmail.com,,Bug,,,,,Tue Jul 14 2026 21:27:04 GMT+0000 (GMT+00:00),Tue Jul 14 2026 21:32:29 GMT+0000 (GMT+00:00),,,,,,,,,,,,21d5f79a-9248-4741-a4db-6c1f68b24a9a,2365,,,
+SAH-9,Saheb Kumar,Recipe can be created with an invalid Source URL without validation,"### **Severity:** 
+
+```
+Average
+```
+
+### **Component:** 
+
+```
+Forkify
+```
+
+### **Affects Version:**
+
+```
+1.0
+```
+
+### **Environment:**
+
+```
+OS: Windows 11
+
+Browser: Google Chrome
+```
+
+### **Preconditions:** 
+
+```
+User is on the Forkify home page.
+
+Add Recipe dialog is open.
+```
+
+### Description:
+
+```
+Steps to Reproduce:
+
+Click Add Recipe.
+
+Enter valid values in all mandatory fields.
+
+In the Source URL field, enter an invalid value such as dsgfsrgrw.
+
+Complete the remaining fields.
+
+Click Upload.
+
+Open the created recipe.
+
+Click the Directions (Source) button.
+
+
+Actual Result:
+
+The application accepts the invalid Source URL and creates the recipe successfully. 
+Clicking the Directions button opens a 404 Not Found page.
+
+
+Expected Result:
+
+The application should validate the Source URL before creating the recipe. 
+If the URL is invalid, it should display a validation message and prevent the recipe from being uploaded.
+```
+
+### Attachments: 
+
+![Screenshot (1119).png](https://uploads.linear.app/2f4771ac-0a8b-43f7-95c1-16b3afb97968/1f872151-b12c-4673-a167-7f83204b3af5/7c9b0fc8-e146-4ecb-90da-b7a97d777a15?signature=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXRoIjoiLzJmNDc3MWFjLTBhOGItNDNmNy05NWMxLTE2YjNhZmI5Nzk2OC8xZjg3MjE1MS1iMTJjLTQ2NzMtYTE2Ny03ZjgzMjA0YjNhZjUvN2M5YjBmYzgtZTE0Ni00ZWNiLTkwZGEtYjdhOTdkNzc3YTE1IiwiaWF0IjoxNzg0MjA2MzU3LCJleHAiOjE3ODY4MzcyMzd9.YbWS_fSzGXXBovf94BGUDseSSwzC5YMAHISSJR8BX4A)
+
+![Screenshot (1116).png](https://uploads.linear.app/2f4771ac-0a8b-43f7-95c1-16b3afb97968/ba16305e-3ad7-4fa3-8ffb-042966b15834/18eb1a55-ab3f-4cf1-97fb-eed6d672e0d2?signature=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXRoIjoiLzJmNDc3MWFjLTBhOGItNDNmNy05NWMxLTE2YjNhZmI5Nzk2OC9iYTE2MzA1ZS0zYWQ3LTRmYTMtOGZmYi0wNDI5NjZiMTU4MzQvMThlYjFhNTUtYWIzZi00Y2YxLTk3ZmItZWVkNmQ2NzJlMGQyIiwiaWF0IjoxNzg0MjA2MzU3LCJleHAiOjE3ODY4MzcyMzd9.nfyEIc7q7V4Gky_RV832gMz_YMu8d7MhSaHN7kYTwN4)",Backlog,,Medium,c9f72ee8-df29-41b7-898a-0c7d98a40c2b,Forkify Testing,sk8651245603@gmail.com,,Bug,,,,,Tue Jul 14 2026 21:43:05 GMT+0000 (GMT+00:00),Thu Jul 16 2026 12:51:44 GMT+0000 (GMT+00:00),,,,,,,,,,,,0095732a-f07e-4a47-9a4d-bcfc10e20496,2349,,,
+SAH-10,Saheb Kumar,Preparation time label displays incorrect spelling after interacting with recipe controls,"### **Severity:** 
+
+```
+Minor
+```
+
+### **Component:**
+
+```
+Forkify
+```
+
+### **Affects Version:**
+
+```
+1.0
+```
+
+### **Environment:**
+
+```
+OS: Windows 11
+
+Browser: Google Chrome
+```
+
+### **Preconditions:**
+
+```
+A recipe is available and opened.
+
+Recipe details page is displayed.
+```
+
+### Description: 
+
+```
+Steps to Reproduce:
+
+Open any recipe.
+
+Observe the preparation time label (e.g., 40 Minutes).
+
+Click the Increase Servings (+) button multiple times or the Decrease Servings (-) button.
+
+Optionally click the Bookmark button.
+
+Observe the preparation time text.
+
+
+Actual Result:
+
+The preparation time label changes to incorrect spellings such as:
+
+MIUNTSE
+
+MITNUES
+
+MINTUES
+
+MINUTSE
+
+instead of displaying Minutes consistently.
+
+
+Expected Result:
+
+The preparation time label should always display Minutes correctly, 
+regardless of any user interaction.
+```
+
+### **Attachment:**
+
+![Screenshot (1120).png](https://uploads.linear.app/2f4771ac-0a8b-43f7-95c1-16b3afb97968/8cd20099-938d-401f-97ba-669f1927dd8e/829a8c43-ead7-4959-a324-6f57b827aca1?signature=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXRoIjoiLzJmNDc3MWFjLTBhOGItNDNmNy05NWMxLTE2YjNhZmI5Nzk2OC84Y2QyMDA5OS05MzhkLTQwMWYtOTdiYS02NjlmMTkyN2RkOGUvODI5YThjNDMtZWFkNy00OTU5LWEzMjQtNmY1N2I4MjdhY2ExIiwiaWF0IjoxNzg0MjA2MzU3LCJleHAiOjE3ODY4MzcyMzd9.IFrIGz1rUaXUn9IiP_9MdQ58nEho3t9QwxoHXxL2cLA)",Backlog,,Medium,c9f72ee8-df29-41b7-898a-0c7d98a40c2b,Forkify Testing,sk8651245603@gmail.com,,Bug,,,,,Tue Jul 14 2026 21:56:00 GMT+0000 (GMT+00:00),Thu Jul 16 2026 12:50:19 GMT+0000 (GMT+00:00),,,,,,,,,,,,25077bb6-3bfb-4dd9-a3c5-26915c316960,2336,,,
+SAH-11,Saheb Kumar,Edit and Delete actions are unavailable for user-created recipes,"### Severity:
+
+```
+Major
+```
+
+### Component:
+
+```
+Forkify
+```
+
+### Affects Version:
+
+```
+1.0
+```
+
+### Environment:
+
+```
+OS: Windows 11
+
+Browser: Google Chrome
+```
+
+### Preconditions:
+
+```
+User has created a recipe successfully.
+
+The created recipe is open.
+```
+
+### Description: 
+
+```
+Steps to Reproduce:
+
+Open the Forkify application.
+
+Create a new recipe.
+
+Open the created recipe.
+
+Look for options to edit or delete the recipe.
+
+
+Actual Result:
+
+No Edit or Delete actions are available for the created recipe.
+
+
+Expected Result:
+
+The application should provide Edit and Delete actions for 
+user-created recipes, as described in the specification.
+```
+
+### ",Backlog,,High,c9f72ee8-df29-41b7-898a-0c7d98a40c2b,Forkify Testing,sk8651245603@gmail.com,,Feature,,,,,Tue Jul 14 2026 22:13:16 GMT+0000 (GMT+00:00),Thu Jul 16 2026 12:48:38 GMT+0000 (GMT+00:00),,,,,,,,,,,,01e5b6f7-2887-4e52-9adb-ea980057985f,2319,,,
+SAH-12,Saheb Kumar,Recipe creation form accepts invalid input due to missing client-side validation,"### **Severity:** 
+
+```
+Major
+```
+
+### **Component:** 
+
+```
+Forkify
+```
+
+### **Affects Version:** 
+
+```
+1.0
+```
+
+### Environment: 
+
+```
+OS: Windows 11
+
+Browser: Google Chrome
+```
+
+### Preconditions: 
+
+```
+User is on the Add Recipe page.
+```
+
+### Description: 
+
+```
+Steps to Reproduce:
+
+Click Add Recipe.
+
+Enter the following invalid values:
+
+Image URL: cdsf
+
+Servings: -1
+
+Ingredient: g,500,Chicken (incorrect format)
+
+Complete the remaining required fields.
+
+Click Upload.
+
+
+Actual Result:
+
+The recipe is created successfully despite invalid input values.
+
+
+Expected Result:
+
+The application should validate all user inputs before creating the recipe. 
+Invalid image URLs, negative serving values, and incorrectly formatted ingredients should not be accepted.
+```
+
+### Attachment: 
+
+![Screenshot (1126).png](https://uploads.linear.app/2f4771ac-0a8b-43f7-95c1-16b3afb97968/fbde9b6a-040a-4613-a451-0e83646f9a9c/8f281170-d5b0-4fd8-a019-4f83c8a34ac9?signature=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXRoIjoiLzJmNDc3MWFjLTBhOGItNDNmNy05NWMxLTE2YjNhZmI5Nzk2OC9mYmRlOWI2YS0wNDBhLTQ2MTMtYTQ1MS0wZTgzNjQ2ZjlhOWMvOGYyODExNzAtZDViMC00ZmQ4LWEwMTktNGY4M2M4YTM0YWM5IiwiaWF0IjoxNzg0MjA2MzU3LCJleHAiOjE3ODY4MzcyMzd9.dZZVA_dnZjG2k34XANUG2MokbrGt8fEYpFzO2DtiMmc)",Backlog,,High,c9f72ee8-df29-41b7-898a-0c7d98a40c2b,Forkify Testing,sk8651245603@gmail.com,,,,,,,Thu Jul 16 2026 12:15:06 GMT+0000 (GMT+00:00),Thu Jul 16 2026 12:47:29 GMT+0000 (GMT+00:00),,,,,,,,,,,,8afa5479-6df1-4b5c-bf72-37a9318feeeb,37,,,
